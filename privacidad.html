@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="es-PE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#14304F">
+<meta name="description" content="Qué datos usa Escudo Digital Comunitario, para qué y por cuánto tiempo.">
+<title>Política de privacidad · Escudo Digital</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20fill%3D%22%2314304f%22/%3E%3Cpolygon%20points%3D%2222%2C20%2078%2C20%2078%2C52%2074%2C64%2064%2C75%2050%2C84%2036%2C75%2026%2C64%2022%2C52%22%20fill%3D%22%23ffffff%22/%3E%3Cpolyline%20points%3D%2237%2C50%2047%2C60%2064%2C40%22%20fill%3D%22none%22%20stroke%3D%22%2314304f%22%20stroke-width%3D%227%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%3C/svg%3E" type="image/svg+xml">
+<style>
+:root {
+  --color-principal: #14304F;
+  --color-coral: #C0504D;
+  --color-verde: #2D6A4F;
+  --color-azul: #1F4E79;
+  --color-dorado: #9C6A12;
+  --color-fondo: #FBFAF6;
+  --color-texto: #2A2A2A;
+  --color-suave: #4D4D4D;
+  --color-sobre-color: #FFFFFF;
+  --alto-minimo: 56px;
+  --ancho-pagina: 40rem;
+  --radio: 12px;
+  color-scheme: light;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { font-size: max(18px, 112.5%); -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.55;
+}
+h1 { margin: 0 0 0.5rem; color: var(--color-principal); font-size: 1.75rem; line-height: 1.2; }
+h2 { margin: 2.25rem 0 0.5rem; color: var(--color-principal); font-size: 1.3rem; line-height: 1.3; }
+h3 { margin: 1.5rem 0 0.35rem; color: var(--color-principal); font-size: 1.075rem; line-height: 1.35; }
+p { margin: 0 0 1rem; }
+ul, ol { margin: 0 0 1rem; padding-left: 1.5rem; }
+li { margin-bottom: 0.5rem; }
+a { color: var(--color-azul); font-weight: 700; }
+:focus-visible { outline: 3px solid var(--color-principal); outline-offset: 3px; }
+.saltar {
+  position: absolute; left: -999px; top: 0.5rem;
+  padding: 0.5rem 1rem; border-radius: var(--radio);
+  background: var(--color-sobre-color); color: var(--color-principal);
+}
+.saltar:focus { left: 1rem; }
+.cabecera { background: var(--color-principal); }
+.cabecera__marca {
+  display: flex; align-items: center; gap: 0.6rem;
+  min-height: var(--alto-minimo); max-width: var(--ancho-pagina);
+  margin: 0 auto; padding: 0 1rem;
+  color: var(--color-sobre-color); font-size: 1.25rem; font-weight: 700; text-decoration: none;
+}
+.cabecera__marca:focus-visible { outline-color: var(--color-sobre-color); outline-offset: -5px; }
+.cabecera__icono { width: 1.6rem; height: 1.8rem; flex: none; }
+.pantalla { max-width: var(--ancho-pagina); margin: 0 auto; padding: 1.75rem 1rem 3rem; }
+.entrada { font-size: 1.2rem; }
+.fecha { color: var(--color-suave); font-size: 0.9rem; }
+.resumen {
+  margin: 1.5rem 0; padding: 1rem 1.25rem;
+  border: 2px solid var(--color-principal); border-radius: var(--radio);
+  background: var(--color-sobre-color);
+}
+.resumen h2 { margin-top: 0; }
+.resumen ul { margin-bottom: 0; }
+.resumen li:last-child { margin-bottom: 0; }
+.aviso {
+  margin: 1.5rem 0; padding: 1rem 1.25rem;
+  border-left: 8px solid var(--color-coral); border-radius: var(--radio);
+  background: var(--color-sobre-color);
+}
+.aviso p:last-child { margin-bottom: 0; }
+.dato {
+  margin: 1rem 0; padding: 1rem 1.25rem;
+  border-left: 8px solid var(--color-principal); border-radius: var(--radio);
+  background: var(--color-sobre-color);
+}
+.dato h3 { margin-top: 0; }
+.dato p:last-child, .dato ul:last-child { margin-bottom: 0; }
+.plazos { width: 100%; margin: 1rem 0 1.5rem; border-collapse: collapse; background: var(--color-sobre-color);
+  border-radius: var(--radio); overflow: hidden; border: 2px solid var(--color-principal); }
+.plazos caption { text-align: left; font-weight: 700; color: var(--color-principal); padding-bottom: 0.5rem; }
+.plazos th, .plazos td { padding: 0.65rem 0.8rem; text-align: left; vertical-align: top; font-size: 0.95rem; }
+.plazos thead th { background: var(--color-principal); color: var(--color-sobre-color); }
+.plazos tbody tr + tr td, .plazos tbody tr + tr th { border-top: 1px solid #D9D6CC; }
+.plazos tbody th { font-weight: 400; }
+.etiqueta { display: inline-block; padding: 0.1rem 0.55rem; border-radius: 999px; font-size: 0.85rem; font-weight: 700;
+  color: var(--color-sobre-color); white-space: nowrap; }
+.etiqueta--verde { background: var(--color-verde); }
+.etiqueta--azul { background: var(--color-azul); }
+.etiqueta--dorado { background: var(--color-dorado); }
+.pasos { counter-reset: paso; list-style: none; padding-left: 0; }
+.pasos li { counter-increment: paso; position: relative; padding-left: 2.6rem; min-height: 2rem; margin-bottom: 0.85rem; }
+.pasos li::before {
+  content: counter(paso); position: absolute; left: 0; top: -0.05rem;
+  width: 1.85rem; height: 1.85rem; border-radius: 50%;
+  background: var(--color-principal); color: var(--color-sobre-color);
+  font-weight: 700; font-size: 0.95rem; display: grid; place-items: center;
+}
+.nota { color: var(--color-suave); font-size: 0.92rem; }
+.acciones { display: grid; gap: 1rem; margin: 1.5rem 0 0; padding: 0; list-style: none; }
+.acciones li { margin: 0; }
+.boton {
+  display: flex; flex-direction: column; justify-content: center;
+  width: 100%; min-height: var(--alto-minimo); padding: 0.75rem 1.25rem;
+  border: 2px solid transparent; border-radius: var(--radio);
+  color: var(--color-sobre-color); font-size: 1.2rem; font-weight: 700; line-height: 1.3; text-decoration: none;
+}
+.boton--principal { background: var(--color-principal); }
+.boton--secundario { border-color: var(--color-principal); background: var(--color-sobre-color); color: var(--color-principal); }
+.boton__detalle { font-size: 1rem; font-weight: 400; }
+.correo { overflow-wrap: anywhere; }
+.pie { border-top: 1px solid #D9D6CC; }
+.pie__interior { max-width: var(--ancho-pagina); margin: 0 auto; padding: 1.25rem 1rem 2rem; font-size: 0.92rem; color: var(--color-suave); }
+.pie nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1.5rem; margin-bottom: 0.75rem; }
+.pie nav a { display: inline-flex; align-items: center; min-height: 44px; }
+.pie nav a[aria-current="page"] { color: var(--color-texto); text-decoration: none; }
+.pie p { margin: 0; }
+@media print {
+  .cabecera, .pie nav, .saltar { display: none; }
+  body { background: #fff; }
+}
+</style>
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="cabecera">
+  <a class="cabecera__marca" href="index.html"><svg class="cabecera__icono" viewBox="18 16 64 72" aria-hidden="true" focusable="false"><polygon points="22,20 78,20 78,52 74,64 64,75 50,84 36,75 26,64 22,52" fill="#ffffff"/><polyline points="37,50 47,60 64,40" fill="none" stroke="#14304f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Escudo Digital</span></a>
+</header>
+<main id="contenido" class="pantalla">
+<h1>Política de privacidad</h1>
+<p class="entrada">Escudo Digital Comunitario te ayuda a saber si un mensaje es una estafa sin que abras el enlace. Aquí te contamos, en palabras simples, qué datos usamos y cómo los cuidamos.</p>
+<p class="fecha">Última actualización: 7 de noviembre de 2026</p>
+
+<section class="resumen" aria-labelledby="en-corto">
+  <h2 id="en-corto">En corto</h2>
+  <ul>
+    <li>No te pedimos nombre, DNI, correo ni datos bancarios. No necesitas crear una cuenta.</li>
+    <li>No guardamos el mensaje que nos envías para revisar.</li>
+    <li>Tu número de WhatsApp solo se usa para responderte y no se guarda.</li>
+    <li>Tu avance en las prácticas se queda en tu teléfono.</li>
+  </ul>
+</section>
+
+<h2 id="responsable">Quién es responsable</h2>
+<p>Escudo Digital Comunitario es un prototipo académico desarrollado por Leonid Giomar Miguel Barba, estudiante de Ciberseguridad en ISIL, dentro de sus Experiencias Formativas en Situaciones Reales de Trabajo (EFSRT). Él es responsable del tratamiento de los datos que se describen en esta página.</p>
+<p>Contacto: <a class="correo" href="mailto:41041749@mail.isil.pe">41041749@mail.isil.pe</a></p>
+
+<h2 id="datos">Qué datos usamos y para qué</h2>
+
+<div class="dato">
+  <h3>1. Cuando revisas un mensaje</h3>
+  <p>Ya sea por WhatsApp o desde la app, el texto que envías se analiza en ese momento para buscar señales de engaño (por ejemplo, un premio que no esperabas o un enlace acortado) y para revisar los enlaces que trae. <strong>El mensaje no se guarda ni aparece en los registros del sistema.</strong></p>
+  <p>De cada revisión solo queda el resultado (sospechoso, sin señales o no revisado), el nombre de las señales encontradas, el dominio del enlace (por ejemplo, <em>ejemplo.com</em>, sin el resto de la dirección) y la fecha y hora. Con eso medimos qué tipos de engaño circulan. Estos datos no permiten saber quién envió el mensaje.</p>
+</div>
+
+<div class="dato">
+  <h3>2. Tu número de WhatsApp</h3>
+  <p>Si nos escribes por WhatsApp, recibimos tu número junto con tu mensaje, porque así funciona WhatsApp. Lo usamos solo para enviarte la respuesta y <strong>no lo guardamos</strong>.</p>
+  <p>Para no responderte dos veces el mismo mensaje, guardamos durante 48 horas una huella del identificador que WhatsApp le pone a cada mensaje. Es un código que no se puede revertir y que no incluye tu número ni lo que escribiste.</p>
+</div>
+
+<div class="dato">
+  <h3>3. Cómo revisamos los enlaces</h3>
+  <p>El sistema <strong>nunca abre el enlace sospechoso</strong>: solo consulta listas de sitios peligrosos. Para eso puede usar el servicio Google Web Risk; cuando lo hace, el enlace completo se envía a Google para la consulta.</p>
+  <p>El resultado de esa consulta se guarda poco tiempo, identificado con una huella del enlace y no con el enlace mismo, y luego se borra solo.</p>
+</div>
+
+<div class="dato">
+  <h3>4. Cuando usas la app</h3>
+  <p>Para saber si la app sirve, sin pedirte una cuenta, la app envía conteos anónimos: la primera vez que se abre en un navegador, las lecciones que terminas, las sesiones del simulador con su número de aciertos, los aciertos del test que se ofrece antes y después de practicar, y las alertas que compartes.</p>
+  <p>Cada conteo lleva solo el día (no la hora) y, si entraste con el enlace de un taller, el código de ese grupo (por ejemplo, <em>CIAM-01</em>). No lleva ningún identificador de tu teléfono ni de tu persona. Con las cifras totales informamos a las organizaciones aliadas cuánta gente usó la app y cuánto aprendió.</p>
+</div>
+
+<div class="dato">
+  <h3>5. Lo que se queda en tu teléfono</h3>
+  <p>La app guarda en tu propio navegador tu avance en el simulador, el estado del test, una marca para no repetir los conteos y una copia de la app para que funcione sin internet. Eso no sale de tu teléfono, salvo los conteos anónimos del punto anterior, y puedes borrarlo cuando quieras: te explicamos cómo en <a href="eliminacion-de-datos.html">Cómo eliminar tus datos</a>.</p>
+</div>
+
+<div class="dato">
+  <h3>6. Datos técnicos de conexión</h3>
+  <p>Para evitar abusos, el servidor limita cuántas revisiones se pueden pedir por minuto desde una misma conexión. Para eso usa la dirección de conexión solo en memoria y por un minuto. Los registros técnicos del servidor no guardan direcciones de conexión ni el contenido de las consultas.</p>
+</div>
+
+<h2 id="compartir">Con quién se comparten</h2>
+<ul>
+  <li><strong>Meta (WhatsApp).</strong> Si usas el bot, tus mensajes y tu número viajan por WhatsApp, que pertenece a Meta, y Meta los trata según sus propias condiciones y su política de privacidad. Si prefieres que no pasen por WhatsApp, puedes revisar tus mensajes desde la app.</li>
+  <li><strong>Google.</strong> Solo cuando se consulta Google Web Risk, como se explica en el punto 3.</li>
+  <li><strong>Organizaciones aliadas</strong> (municipios, ONG o instituciones que organizan los talleres). Reciben solo cifras totales y anónimas por grupo.</li>
+</ul>
+<p>Meta y Google pueden tratar estos datos en servidores fuera del Perú. No vendemos ni alquilamos datos, y la app no tiene publicidad.</p>
+
+<h2 id="plazos">Dónde se guardan y por cuánto tiempo</h2>
+<p>Durante la etapa de prototipo, el servidor funciona en un equipo administrado por el responsable del proyecto.</p>
+<table class="plazos">
+  <caption>Cuánto tiempo se conserva cada dato</caption>
+  <thead><tr><th scope="col">Dato</th><th scope="col">Tiempo</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">El mensaje que envías</th><td><span class="etiqueta etiqueta--verde">No se guarda</span></td></tr>
+    <tr><th scope="row">Tu número de WhatsApp</th><td><span class="etiqueta etiqueta--verde">No se guarda</span></td></tr>
+    <tr><th scope="row">Huella del identificador del mensaje</th><td>48 horas; luego se borra sola</td></tr>
+    <tr><th scope="row">Resultado de la consulta de un enlace</th><td>Poco tiempo; luego se borra solo</td></tr>
+    <tr><th scope="row">Registro de revisiones (resultado, señales, dominio y fecha) y conteos anónimos</th><td>Mientras dure el proyecto académico; se eliminan al terminarlo</td></tr>
+    <tr><th scope="row">Datos guardados en tu teléfono</th><td>Hasta que tú los borres</td></tr>
+  </tbody>
+</table>
+
+<h2 id="derechos">Tus derechos</h2>
+<p>La Ley N.°&nbsp;29733, Ley de Protección de Datos Personales, y su Reglamento, aprobado por el Decreto Supremo N.°&nbsp;016-2024-JUS, te dan derecho a saber qué datos tuyos se tratan, a corregirlos, a pedir que se eliminen y a oponerte a su uso.</p>
+<p>Como Escudo Digital no guarda datos que te identifiquen, normalmente no hay registros que podamos relacionar contigo. Aun así, puedes escribirnos a <a class="correo" href="mailto:41041749@mail.isil.pe">41041749@mail.isil.pe</a> y te responderemos. Para borrar lo que está en tu teléfono o en tu chat de WhatsApp, sigue los pasos de <a href="eliminacion-de-datos.html">Cómo eliminar tus datos</a>.</p>
+<div class="aviso">
+  <p>Si consideras que no atendimos tu pedido, puedes presentar un reclamo ante la Autoridad Nacional de Protección de Datos Personales, que ejerce el Ministerio de Justicia y Derechos Humanos.</p>
+</div>
+
+<h2 id="seguridad">Cómo cuidamos la información</h2>
+<ul>
+  <li>La app y el bot funcionan con conexión cifrada (HTTPS).</li>
+  <li>Antes de procesar un mensaje de WhatsApp, el servidor comprueba que venga realmente de Meta.</li>
+  <li>La base de datos no tiene dónde guardar el texto de un mensaje ni tu número: solo tiene los campos que se describen en esta página.</li>
+</ul>
+
+<h2 id="cambios">Cambios en esta política</h2>
+<p>Si cambiamos lo que hace el servicio con los datos, actualizaremos esta página y su fecha de actualización.</p>
+</main>
+<footer class="pie">
+  <div class="pie__interior">
+    <nav aria-label="Información legal"><a href="privacidad.html" aria-current="page">Política de privacidad</a><a href="eliminacion-de-datos.html">Cómo eliminar tus datos</a></nav>
+    <p>Escudo Digital Comunitario · Prototipo académico, gratuito y sin fines de lucro · Perú</p>
+  </div>
+</footer>
+</body>
+</html>
