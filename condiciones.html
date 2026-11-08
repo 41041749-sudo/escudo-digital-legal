@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="es-PE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#14304F">
+<meta name="description" content="Qué es Escudo Digital Comunitario, qué significa su resultado y cómo usar el servicio.">
+<title>Condiciones del servicio · Escudo Digital</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20fill%3D%22%2314304f%22/%3E%3Cpolygon%20points%3D%2222%2C20%2078%2C20%2078%2C52%2074%2C64%2064%2C75%2050%2C84%2036%2C75%2026%2C64%2022%2C52%22%20fill%3D%22%23ffffff%22/%3E%3Cpolyline%20points%3D%2237%2C50%2047%2C60%2064%2C40%22%20fill%3D%22none%22%20stroke%3D%22%2314304f%22%20stroke-width%3D%227%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%3C/svg%3E" type="image/svg+xml">
+<style>
+:root {
+  --color-principal: #14304F;
+  --color-coral: #C0504D;
+  --color-verde: #2D6A4F;
+  --color-azul: #1F4E79;
+  --color-dorado: #9C6A12;
+  --color-fondo: #FBFAF6;
+  --color-texto: #2A2A2A;
+  --color-suave: #4D4D4D;
+  --color-sobre-color: #FFFFFF;
+  --alto-minimo: 56px;
+  --ancho-pagina: 40rem;
+  --radio: 12px;
+  color-scheme: light;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { font-size: max(18px, 112.5%); -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.55;
+}
+h1 { margin: 0 0 0.5rem; color: var(--color-principal); font-size: 1.75rem; line-height: 1.2; }
+h2 { margin: 2.25rem 0 0.5rem; color: var(--color-principal); font-size: 1.3rem; line-height: 1.3; }
+h3 { margin: 1.5rem 0 0.35rem; color: var(--color-principal); font-size: 1.075rem; line-height: 1.35; }
+p { margin: 0 0 1rem; }
+ul, ol { margin: 0 0 1rem; padding-left: 1.5rem; }
+li { margin-bottom: 0.5rem; }
+a { color: var(--color-azul); font-weight: 700; }
+:focus-visible { outline: 3px solid var(--color-principal); outline-offset: 3px; }
+.saltar {
+  position: absolute; left: -999px; top: 0.5rem;
+  padding: 0.5rem 1rem; border-radius: var(--radio);
+  background: var(--color-sobre-color); color: var(--color-principal);
+}
+.saltar:focus { left: 1rem; }
+.cabecera { background: var(--color-principal); }
+.cabecera__marca {
+  display: flex; align-items: center; gap: 0.6rem;
+  min-height: var(--alto-minimo); max-width: var(--ancho-pagina);
+  margin: 0 auto; padding: 0 1rem;
+  color: var(--color-sobre-color); font-size: 1.25rem; font-weight: 700; text-decoration: none;
+}
+.cabecera__marca:focus-visible { outline-color: var(--color-sobre-color); outline-offset: -5px; }
+.cabecera__icono { width: 1.6rem; height: 1.8rem; flex: none; }
+.pantalla { max-width: var(--ancho-pagina); margin: 0 auto; padding: 1.75rem 1rem 3rem; }
+.entrada { font-size: 1.2rem; }
+.fecha { color: var(--color-suave); font-size: 0.9rem; }
+.resumen {
+  margin: 1.5rem 0; padding: 1rem 1.25rem;
+  border: 2px solid var(--color-principal); border-radius: var(--radio);
+  background: var(--color-sobre-color);
+}
+.resumen h2 { margin-top: 0; }
+.resumen ul { margin-bottom: 0; }
+.resumen li:last-child { margin-bottom: 0; }
+.aviso {
+  margin: 1.5rem 0; padding: 1rem 1.25rem;
+  border-left: 8px solid var(--color-coral); border-radius: var(--radio);
+  background: var(--color-sobre-color);
+}
+.aviso p:last-child { margin-bottom: 0; }
+.dato {
+  margin: 1rem 0; padding: 1rem 1.25rem;
+  border-left: 8px solid var(--color-principal); border-radius: var(--radio);
+  background: var(--color-sobre-color);
+}
+.dato h3 { margin-top: 0; }
+.dato p:last-child, .dato ul:last-child { margin-bottom: 0; }
+.plazos { width: 100%; margin: 1rem 0 1.5rem; border-collapse: collapse; background: var(--color-sobre-color);
+  border-radius: var(--radio); overflow: hidden; border: 2px solid var(--color-principal); }
+.plazos caption { text-align: left; font-weight: 700; color: var(--color-principal); padding-bottom: 0.5rem; }
+.plazos th, .plazos td { padding: 0.65rem 0.8rem; text-align: left; vertical-align: top; font-size: 0.95rem; }
+.plazos thead th { background: var(--color-principal); color: var(--color-sobre-color); }
+.plazos tbody tr + tr td, .plazos tbody tr + tr th { border-top: 1px solid #D9D6CC; }
+.plazos tbody th { font-weight: 400; }
+.etiqueta { display: inline-block; padding: 0.1rem 0.55rem; border-radius: 999px; font-size: 0.85rem; font-weight: 700;
+  color: var(--color-sobre-color); white-space: nowrap; }
+.etiqueta--verde { background: var(--color-verde); }
+.etiqueta--azul { background: var(--color-azul); }
+.etiqueta--dorado { background: var(--color-dorado); }
+.pasos { counter-reset: paso; list-style: none; padding-left: 0; }
+.pasos li { counter-increment: paso; position: relative; padding-left: 2.6rem; min-height: 2rem; margin-bottom: 0.85rem; }
+.pasos li::before {
+  content: counter(paso); position: absolute; left: 0; top: -0.05rem;
+  width: 1.85rem; height: 1.85rem; border-radius: 50%;
+  background: var(--color-principal); color: var(--color-sobre-color);
+  font-weight: 700; font-size: 0.95rem; display: grid; place-items: center;
+}
+.nota { color: var(--color-suave); font-size: 0.92rem; }
+.acciones { display: grid; gap: 1rem; margin: 1.5rem 0 0; padding: 0; list-style: none; }
+.acciones li { margin: 0; }
+.boton {
+  display: flex; flex-direction: column; justify-content: center;
+  width: 100%; min-height: var(--alto-minimo); padding: 0.75rem 1.25rem;
+  border: 2px solid transparent; border-radius: var(--radio);
+  color: var(--color-sobre-color); font-size: 1.2rem; font-weight: 700; line-height: 1.3; text-decoration: none;
+}
+.boton--principal { background: var(--color-principal); }
+.boton--secundario { border-color: var(--color-principal); background: var(--color-sobre-color); color: var(--color-principal); }
+.boton__detalle { font-size: 1rem; font-weight: 400; }
+.correo { overflow-wrap: anywhere; }
+.pie { border-top: 1px solid #D9D6CC; }
+.pie__interior { max-width: var(--ancho-pagina); margin: 0 auto; padding: 1.25rem 1rem 2rem; font-size: 0.92rem; color: var(--color-suave); }
+.pie nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1.5rem; margin-bottom: 0.75rem; }
+.pie nav a { display: inline-flex; align-items: center; min-height: 44px; }
+.pie nav a[aria-current="page"] { color: var(--color-texto); text-decoration: none; }
+.pie p { margin: 0; }
+@media print {
+  .cabecera, .pie nav, .saltar { display: none; }
+  body { background: #fff; }
+}
+</style>
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="cabecera">
+  <a class="cabecera__marca" href="index.html"><svg class="cabecera__icono" viewBox="18 16 64 72" aria-hidden="true" focusable="false"><polygon points="22,20 78,20 78,52 74,64 64,75 50,84 36,75 26,64 22,52" fill="#ffffff"/><polyline points="37,50 47,60 64,40" fill="none" stroke="#14304f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Escudo Digital</span></a>
+</header>
+<main id="contenido" class="pantalla">
+<h1>Condiciones del servicio</h1>
+<p class="entrada">Estas condiciones explican qué es Escudo Digital Comunitario, qué puedes esperar de él y cómo usarlo bien. Al usar la app o escribirle al bot, las aceptas. Si no estás de acuerdo, no lo uses.</p>
+<p class="fecha">Última actualización: 7 de noviembre de 2026</p>
+
+<section class="resumen" aria-labelledby="en-corto">
+  <h2 id="en-corto">En corto</h2>
+  <ul>
+    <li>Es gratis y no necesitas crear una cuenta.</li>
+    <li>El resultado es una orientación, no una garantía: ningún sistema detecta todas las estafas.</li>
+    <li>Si tienes dudas, no hagas clic, no compartas tus claves y comunícate con tu banco por sus canales oficiales.</li>
+    <li>Es un prototipo académico: puede tener errores o dejar de estar disponible.</li>
+  </ul>
+</section>
+
+<h2 id="que-es">1. Qué es Escudo Digital Comunitario</h2>
+<p>Es un servicio gratuito que te ayuda a reconocer estafas digitales. Tiene tres partes: <strong>Verificar</strong>, para revisar un mensaje o un enlace sin abrirlo, por WhatsApp o desde la app; <strong>Simulador</strong>, para practicar con mensajes de ejemplo; y <strong>Aprender</strong>, con lecciones cortas.</p>
+<p>Es un prototipo académico desarrollado por Leonid Giomar Miguel Barba, estudiante de Ciberseguridad en ISIL, dentro de sus Experiencias Formativas en Situaciones Reales de Trabajo (EFSRT). No tiene fines de lucro.</p>
+
+<h2 id="resultado">2. Qué significa el resultado</h2>
+<p>Cuando revisas un mensaje, el sistema busca señales de engaño y consulta listas de sitios peligrosos. Con eso te muestra uno de estos resultados:</p>
+<ul>
+  <li><strong>Sospechoso:</strong> encontró señales de estafa. No abras el enlace ni respondas.</li>
+  <li><strong>Sin señales de alerta:</strong> no encontró señales conocidas. <strong>No significa que el mensaje sea seguro.</strong> Las estafas cambian todo el tiempo y algunas no dejan señales.</li>
+  <li><strong>No pude revisar este enlace ahora:</strong> no se pudo completar la revisión. No abras el enlace y vuelve a enviarlo más tarde.</li>
+</ul>
+<div class="aviso">
+  <p>Ante cualquier duda: no hagas clic, no compartas claves, códigos ni datos de tu tarjeta, y llama a tu banco o a la entidad que dice escribirte usando el número de su página oficial o el que está detrás de tu tarjeta. Si ya caíste en un engaño, avisa a tu banco de inmediato y denuncia ante la Policía Nacional del Perú.</p>
+</div>
+
+<h2 id="disponibilidad">3. Un prototipo en prueba</h2>
+<ul>
+  <li>El servicio funciona en talleres y periodos de prueba. Puede tener errores, interrumpirse o dejar de estar disponible sin aviso.</li>
+  <li>Durante el prototipo, el bot de WhatsApp solo puede responder a un grupo limitado de números de prueba. Si no te responde, usa la opción <strong>Verificar</strong> de la app.</li>
+  <li>Podemos cambiar, pausar o terminar el servicio, por ejemplo cuando acabe el proyecto académico.</li>
+</ul>
+
+<h2 id="uso">4. Cómo usarlo bien</h2>
+<p>Te pedimos que:</p>
+<ul>
+  <li>Envíes solo el mensaje que quieres revisar. Si trae tus datos o los de otra persona, como un DNI, una clave o un número de tarjeta, bórralos antes de enviarlo.</li>
+  <li>No uses el servicio para enviar mensajes masivos, molestar a otras personas ni engañar a nadie.</li>
+  <li>No intentes dañar, saturar o vulnerar el sistema, ni acceder a partes que no son públicas.</li>
+</ul>
+<p>Si alguien usa el servicio de esa forma, podemos limitar su acceso.</p>
+
+<h2 id="gratuito">5. Gratis y sin publicidad</h2>
+<p>No te cobramos nada, ahora ni después, y la app no tiene publicidad. La operación la financian organizaciones aliadas, como municipios, ONG o instituciones, que solo reciben cifras totales y anónimas.</p>
+
+<h2 id="terceros">6. Servicios de terceros</h2>
+<p>Si usas el bot, tu conversación pasa por WhatsApp, que pertenece a Meta, y se rige también por las condiciones de WhatsApp. Para revisar enlaces, el sistema puede consultar Google Web Risk. Cómo tratamos tus datos en estos casos lo explicamos en la <a href="privacidad.html">Política de privacidad</a>.</p>
+
+<h2 id="contenido">7. Los contenidos</h2>
+<p>Los textos, casos de práctica y lecciones fueron preparados para este proyecto. Los mensajes del simulador son inventados y se muestran como texto, sin enlaces que se puedan tocar. Puedes compartir las alertas y consejos con tu familia y tu comunidad; para cualquier otro uso, escríbenos.</p>
+
+<h2 id="responsabilidad">8. Responsabilidad</h2>
+<p>Escudo Digital es una herramienta de orientación. Las decisiones sobre tus mensajes, tu dinero y tus cuentas son tuyas. El proyecto no responde por pérdidas causadas por quienes intentan estafarte, ni por el uso del servicio contrario a estas condiciones, salvo en los casos en que la ley no permita excluir esa responsabilidad.</p>
+
+<h2 id="privacidad">9. Tus datos</h2>
+<p>Qué datos usamos y por cuánto tiempo está en la <a href="privacidad.html">Política de privacidad</a>. Cómo borrarlos está en <a href="eliminacion-de-datos.html">Cómo eliminar tus datos</a>.</p>
+
+<h2 id="cambios">10. Cambios y ley aplicable</h2>
+<p>Si cambiamos estas condiciones, actualizaremos esta página y su fecha. Estas condiciones se rigen por las leyes de la República del Perú.</p>
+
+<h2 id="contacto">11. Contacto</h2>
+<p>Para dudas, sugerencias o reclamos sobre el servicio, escríbenos a <a class="correo" href="mailto:41041749@mail.isil.pe">41041749@mail.isil.pe</a>.</p>
+</main>
+<footer class="pie">
+  <div class="pie__interior">
+    <nav aria-label="Información legal"><a href="condiciones.html" aria-current="page">Condiciones del servicio</a><a href="privacidad.html">Política de privacidad</a><a href="eliminacion-de-datos.html">Cómo eliminar tus datos</a></nav>
+    <p>Escudo Digital Comunitario · Prototipo académico, gratuito y sin fines de lucro · Perú</p>
+  </div>
+</footer>
+</body>
+</html>
